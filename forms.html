@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Container</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #76d742;
+            border: 1px solid #ccc;
+            width: 50%
+        }
+
+        .button {
+            flex: 1;
+            border-radius: 4px;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            flex: 3;
+            color: #000;
+            background-color: #76d742;
+        }
+        /* Adjust the width of the first two buttons */
+        .button:first-child,
+        .button:nth-child(2) {
+            flex: 3;
+
+
+        }
+        .button:nth-child(3) {
+            background-color: #fff;
+        }
+        .button:last-child {
+
+            flex: 0.5; /* Adjust the width of the last two buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button">This text can be up to 40 Characters!</button>
+        <button class="button">This text can be up to 40 Characters!</button>
+        <button class="button" >Cancel</button>
+        <button class="button" >Save</button>
+    </div>
+</body>
+</html>
